@@ -2,6 +2,8 @@ ARG VERSION=0.23.1
 
 FROM ghcr.io/linagora/tmail-web:v${VERSION} AS extract
 
+# ======================================= #
+
 FROM ghcr.io/polarix-containers/nginx:unprivileged-mainline-slim
 
 LABEL maintainer="Thien Tran contact@tommytran.io"
